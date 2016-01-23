@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = '1.0'
+
+sourceCompatibility = 1.8 
+targetCompatibility = 1.8
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes('Implementation-Title': 'Task Manager',
+                   'Implementation-Version': version,
+                   'Main-Class': 'com.lankheet.taskmanager.TaskManager')
+    }
+}
