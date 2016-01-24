@@ -5,11 +5,11 @@ Requirements:<BR>
 1. Console app, no fancy UI<BR>
 2. Code with a plain text editor<BR>
 3. It shall present a menu with the following options:<BR>
-  0) Add a task<BR>
-  1) List all tasks<BR>
-  2) Modify a task<BR>
-  3) Delete a task<BR>
-  4) Exit<BR>
+    0) Add a task<BR>
+    1) List all tasks<BR>
+    2) Modify a task<BR>
+    3) Delete a task<BR>
+    4) Exit<BR>
 4. Use the following classes: FileWriter, FileReader, BufferedReader, BufferedWriter, Path, Paths<BR>
 5. A task has a name, start and end time<BR>
 6. Added by me: A task has a description and a completed flag<BR>
