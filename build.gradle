@@ -3,11 +3,18 @@ apply plugin: 'eclipse'
 
 version = '1.0'
 
+repositories {
+    mavenCentral()
+}
+
 sourceCompatibility = 1.8 
 targetCompatibility = 1.8
 
 dependencies {
     testCompile 'junit:junit:4.12'
+    testCompile 'info.cukes:cucumber-junit:1.2.4'
+    testCompile 'info.cukes:cucumber-java:1.2.2'
+	// testCompile 'info.cukes:cucumber-spring:1.2.2'
 }
 
 jar {
@@ -16,4 +23,8 @@ jar {
                    'Implementation-Version': version,
                    'Main-Class': 'com.lankheet.taskmanager.TaskManager')
     }
+}
+
+eclipse.project {
+	natures 'org.springsource.ide.eclipse.gradle.core.nature'
 }
